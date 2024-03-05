@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homesmart</title>
+  </head>
+  <body
+    class="max-w-[2000px] mx-auto text-neutral-900 dark:text-neutral-200 bg-whitedark:bg-netural-800"
+  >
+    <nav class="mx-auto p-4 bg-amber-400">
+      <div class="container mx-auto flex items-center justify-between">
+        <a
+          href="/"
+          class="focus:outline-none lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 z-50 focus-visible:ring-4 ring-neutral-900 text-neutral-900 hover:text-neutral-600 rounded-sm ring-offset-amber-400 hover:opacity-75 transition-opacity"
+        >
+          <img
+            src="assets_img/logo.svg"
+            alt=""
+            class="rounded-full w-36 md:w-44 lg:w-45"
+          />
+        </a>
+        <button
+          id="menu"
+          class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 text-neutral-900 hover:text-neutral-600 rounded-sm ring-offset-amber-400 transition-colors"
+          aria-expanded="false"
+          aria-label="Open Menu"
+        >
+          <svg
+            class="w-8 h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+          </svg>
+        </button>
+        <div
+          class="z-40 hidden flex-col gap-4 absolute left-0 right-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:justify-between lg:static lg:shadow-none lg:w-full lg:mx-auto"
+          id="menuBar"
+          role="menubar"
+        >
+          <a
+            class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 text-neutral-900 hover:text-neutral-600 rounded-sm ring-offset-amber-400 transition-colors"
+            href="/"
+            role="menuitem"
+            >Home</a
+          >
+          <a
+            class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 text-neutral-900 hover:text-neutral-600 rounded-sm ring-offset-amber-400 transition-colors"
+            href="/"
+            role="menuitem"
+            >Contact Us</a
+          >
+          <a
+            class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 text-neutral-900 hover:text-neutral-600 rounded-sm ring-offset-amber-400 transition-colors"
+            href="/"
+            role="menuitem"
+            >About Us</a
+          >
+          <a
+            class="py-2 px-6 focus:outline-none focus-visible:ring-4 bg-teal-900 ring-neutral-900 text-white rounded-md ring-offset-amber-400 shadow-xl hover:shadow-none transition-shadow"
+            href="/"
+            role="menuitem"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+      <div
+        class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"
+      ></div>
+      <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+        <img
+          src="assets_img/couch.png"
+          alt="couch"
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto"
+        />
+        <img
+          src="assets_img/app.svg"
+          alt="app"
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto sm:w-52 md:w-64 lg:w-72"
+        />
+      </div>
+    </header>
+
+    <main
+      class="grid grid-12 sm:gap-16 md:gap-24 lg:gap-32 px-8 overflow-hidden"
+    >
+      <a
+        href="#"
+        class="py-2 px-6 mx-auto bg-amber-400 dark:text-neutral-900 my-12 flex gap-2 ring-neutral-900 hover:shadow-none rounded-md focus:outline-none focus-visible:ring-4 ring-offset-amber-400 shadow-xl transition-shadow"
+      >
+        <svg
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
+          ></path>
+        </svg>
+        <span>Download the App</span>
+      </a>
+      <section class="relative" aria-labelledby="qualities">
+        <img src="assets_img/dots.svg" alt="dots" class="hidden lg:block absolute top-1/2 -left-24 xl:-left-7 -translate-y-1/2">
+
+        <img src="assets_img/dots.svg" alt="dots" class="hidden lg:block absolute top-1/2 -right-24 xl:-right-7 -translate-y-1/2">
+        <h2 id="qualities" class="sr-only">Our Qualities</h2>
+        <div
+          class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-center justify-center md:justify-between"
+        >
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-amber-400 border-8 p-4">
+              <svg
+                class="w-16 h-16"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M6 8V7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7V8H20C20.5523 8 21 8.44772 21 9V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V9C3 8.44772 3.44772 8 4 8H6ZM19 10H5V20H19V10ZM11 15.7324C10.4022 15.3866 10 14.7403 10 14C10 12.8954 10.8954 12 12 12C13.1046 12 14 12.8954 14 14C14 14.7403 13.5978 15.3866 13 15.7324V18H11V15.7324ZM8 8H16V7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7V8Z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Safe</h3>
+            <p>Our Products are secure and private out-of-the-box</p>
+          </div>
+
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-amber-400 border-8 p-4">
+              <svg
+                class="w-16 h-16"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13 9H21L11 24V15H4L13 0V9ZM11 11V7.22063L7.53238 13H13V17.3944L17.263 11H11Z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Efficent</h3>
+            <p>Feel good about your wallet and the environment</p>
+          </div>
+
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-amber-400 border-8 p-4">
+              <svg
+                class="w-16 h-16"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598L12 1ZM12 3.04879L5 4.60434V13.7889C5 15.1263 5.6684 16.3752 6.7812 17.1171L12 20.5963L17.2188 17.1171C18.3316 16.3752 19 15.1263 19 13.7889V4.60434L12 3.04879ZM16.4524 8.22183L17.8666 9.63604L11.5026 16L7.25999 11.7574L8.67421 10.3431L11.5019 13.1709L16.4524 8.22183Z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Proven</h3>
+            <p>Leading the Smart Home world for 10 years</p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="partner" class="text-center grid gap-8 place-items-center">
+        <div class="grid gap-4">
+          <h2 id="partner" class="text-4xl font-bold text-amber-400">Our Partners</h2>
+          <p class="w-full max-w-lg">We've partnered with hundreds of smart home brands to help you create a smart home that fits your needs and doesn't lock you in.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 md:gap-x16 max-w-2xl mx-auto">
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="assets_img/partner1.svg" alt="">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="assets_img/partner2.svg" alt="">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="assets_img/partner3.svg" alt="">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="assets_img/partner4.svg" alt="">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="assets_img/partner5.svg" alt="">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="assets_img/partner6.svg" alt="">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="assets_img/partner7.svg" alt="">
+          </div>
+        </div>
+      </section>
+      <section aria-labelleby="home" class="relative">
+        <div class="flex flex-wrap-reverse gap-8 justify-center">
+          <div class="flex flex-wrap gap-6 flex-col items-start lg:justify-center">
+            <div class="flex flex-wrap flex-col items-start gap-2">
+              <h2 class="text-4xl font-bold">Relax, you're home</h2>
+              <p class="max-w-md">All our supported hardware includes traditional inputs so you can integrate our prodixts into your house in a way that's best for everyone.</p>
+            </div>
+            <a
+            href="#"
+            class="py-2 px-6  bg-amber-400 dark:text-neutral-900 flex gap-2 ring-neutral-900 hover:shadow-none rounded-md focus:outline-none focus-visible:ring-4 ring-offset-amber-400 shadow-xl transition-shadow">Sign Up
+          </a>
+          </div>
+          <img src="assets_img/table.png" alt="">
+        </div>
+        <div class="absolute -bottom-6 -right-32 aspect-square -z-10 md:border-8 border-amber-400 rounded-full md:w-64 lg:w-96 xl:max-w-lg"></div>
+        <div class="bg-teal-900 h-24 -mx-8 mt-12 xl:h-48 xl:absolute w-screen -bottom-8 -z-10"></div>
+      </section>
+    </main>
+<section aria-labelledby="contact" class="container mx-auto px-8 overflow-hidden">
+  <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
+    <div class="md:flex-1 md:max-w-sm relative">
+      <img src="assets_img/lamp.png" alt="lamp" class="mx-auto">
+      <a
+      href="#"
+      class="py-2 px-6 mx-auto bg-amber-400 dark:text-neutral-900 md:mb-12 flex gap-2 ring-neutral-900 hover:shadow-none rounded-md focus:outline-none focus-visible:ring-4 ring-offset-amber-400 shadow-xl transition-shadow w-max mt-12"
+    >
+      <svg
+        class="h-6 w-6"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
+        ></path>
+      </svg>
+      <span>Download the App</span>
+    </a>
+    <img src="assets_img/app.svg" alt="app" class="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-[16rem] xl:max-w-xs" width="240">
+    <div class="absolute -bottom-18 -left-1/2 aspect-square -z-10 md:border-8 border-amber-400 rounded-full md:w-72 lg:w-96 "></div>
+    </div>
+
+<!--form section  -->
+    <form action="" class="relative border-4 border-neutral-900 p-6 rounded-lg grid gap-8 md:flex-1 md:max-w-lg my-4 bg-white md:my-12 md:lg-16 dark:bg-neutral-800 w-full">
+      <h2 id="contact" class="text-3xl font-bold">Let's Connect</h2>
+      <div class="relative">
+        <input type="text" id="name" class="form-input peer placeholder-transparent  w-full py-2 border-2 border-amber-400 rounded-md focus:ring-2 dark:focus:ring-offset-2 focus:ring-amber-400 focus:outline-none dark:bg-amber-400 focus:border-amber-400 dark:text-neutral-900" placeholder="Your Name">
+        <label for="name" class="text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 peer-focus:-left-4 peer-focus:top-1/2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300">Your Name</label>
+      </div>
+      <div class="relative">
+        <input type="text" id="name" class="form-input peer placeholder-transparent  w-full py-2 border-2 border-amber-400 rounded-md focus:ring-2 dark:focus:ring-offset-2 focus:ring-amber-400 focus:outline-none dark:bg-amber-400 focus:border-amber-400 dark:text-neutral-900" placeholder="Your Email">
+        <label for="name" class="text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 peer-focus:-left-4 peer-focus:top-1/2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300">Your Email</label>
+      </div>
+<div class="relative">
+  <textarea name="content" id="content" cols="20" rows="5" placeholder="How Can I help you?" class="form-textarea resize-none peer placeholder-transparent  w-full py-2 border-2 border-amber-400 rounded-md focus:ring-2 dark:focus:ring-offset-2 focus:ring-amber-400 focus:outline-none dark:bg-amber-400 focus:border-amber-400 dark:text-neutral-900"></textarea>
+  <label for="content" class="text-neutral-500 text-sm font-bold uppercase absolute -top-3 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-6 peer-placeholder-shown:text-neutral-900 peer-focus:-left-4 peer-focus:top-1/2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300">How Can I help you?</label>
+</div>
+<a
+class="py-2 px-6 focus:outline-none focus-visible:ring-4 bg-neutral-900 w-max ring-neutral-900 text-white rounded-md ring-offset-amber-400 shadow-xl hover:shadow-none transition-shadow"
+href="/"
+role="menuitem"
+>Sign Up</a
+>
+    </form>
+  </div>
+</section>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
